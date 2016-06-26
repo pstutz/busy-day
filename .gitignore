@@ -23,3 +23,6 @@ src/main/resources/2016-06-22-15.json
 .project
 
 .settings/org.eclipse.core.resources.prefs
+/bin/
+
+.cache-main
