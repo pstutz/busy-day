@@ -17,3 +17,9 @@ project/plugins/project/
 .worksheet
 .idea
 src/main/resources/2016-06-22-15.json
+
+.classpath
+
+.project
+
+.settings/org.eclipse.core.resources.prefs
