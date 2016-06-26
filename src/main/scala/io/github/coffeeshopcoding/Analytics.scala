@@ -14,10 +14,11 @@ object Analytics extends App {
 
     val eventType = (json \ "type").as[String]
     val userLogin = (json \ "actor" \ "login").as[String]
+    val repoName = (json \ "repo" \ "name").asOpt[String]
 
-    GithubEvent(eventType, userLogin)
+    GithubEvent(eventType, userLogin, repoName)
   })
 
-  println(events.toList.groupBy(_.eventType).mapValues(_.size))
+  println(events.toList.groupBy(_.repo).mapValues(_.size).toList.sortBy(-1 * _._2))
 
 }
