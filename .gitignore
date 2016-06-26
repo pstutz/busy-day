@@ -26,3 +26,5 @@ src/main/resources/2016-06-22-15.json
 /bin/
 
 .cache-main
+
+src/main/resources/langs.json
